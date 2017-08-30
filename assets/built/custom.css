@@ -1,0 +1,2 @@
+table.useful-phone-numbers{display:table;line-height:1;table-layout:fixed;white-space:normal;max-width:800px;width:100%}@media only screen and (max-device-width:480px){table.useful-phone-numbers{word-wrap:break-word;font-size:3vw}table.useful-phone-numbers th{font-size:2vw}}@media only screen and (min-device-width:480px){table.useful-phone-numbers th.phone-number{width:150px}table.useful-phone-numbers td:last-child{word-wrap:break-word}}
+/*# sourceMappingURL=custom.css.map */
