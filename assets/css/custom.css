@@ -27,3 +27,114 @@ table.useful-phone-numbers {
         word-wrap: break-word;
     }
 }
+
+/* Site Header Updates */
+.site-title {
+	font-size: 4.8rem;
+}
+.site-description {
+	margin-top: 1em;
+	font-size: 3.2rem;
+	letter-spacing: 0.05em;
+	font-weight: 500;
+}
+.site-header-content {
+	width: 100%;
+	max-width: 750px;
+	min-height: 0;
+	padding: 10em 0 8em;
+	margin-left: auto;
+	margin-right: auto
+}
+.home-template .site-nav {
+	top: 0;
+}
+.site-nav-left {
+	padding-bottom: 0;
+}
+
+
+/* Typography */
+body {
+	letter-spacing: 0.0125em;
+}
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 0.025em;
+}
+a {
+	-webkit-transition: color 0.35s ease-in-out; /* Safari */
+	transition: color 2s, height 2s, transform 2s;	
+}
+
+
+/* Full Content Posts */
+.post-full-header {
+	padding: 2em 0;
+}
+.no-image .post-full-content,
+.post-full-content {
+	padding: 2.5em 4em;
+	margin-bottom: 2.5em;
+}
+
+
+/* Contact Form */
+html:not([style-scope]):not(.style-scope).freebird, 
+body:not([style-scope]):not(.style-scope).freebirdLightBackground {
+	color: #090a0b;
+	background: #efeeef;	
+}
+.contact-form,
+.freebirdLightBackground,
+.freebirdHeaderMast {
+	color: #090a0b;
+	background: rgb(237, 231, 246);
+}
+.freebirdHeaderMast {
+	height: 0;
+	display: none;
+}
+.freebirdFormviewerViewCenteredContent {
+	width: 750px;
+	max-width: 100%;
+}
+.freebirdFormviewerViewFormCard:first-of-type {
+	margin-top: 2em;
+}
+
+/* New Color Scheme */
+body {
+	color: #090a0b;
+}
+.site-header {
+	background: #4d80b6;
+}
+.site-title {
+	color: #090a0b;
+	text-shadow: none;
+	box-shadow: none;
+}
+.site-description {
+	opacity: 1;
+	color: #ffffff;
+}
+
+html:not([style-scope]):not(.style-scope).freebird, 
+body:not([style-scope]):not(.style-scope).freebirdLightBackground {
+	color: #090a0b;
+	background: #efeeef;	
+}
+.contact-form,
+.freebirdLightBackground,
+.freebirdHeaderMast {
+	color: #090a0b;
+	background: #efeeef;
+}
+.freebirdAccentBackground {
+	background-color: #4d80b6;
+}
+
+.site-footer {
+	color: #090a0b;
+	background: #4d80b6;	
+}
