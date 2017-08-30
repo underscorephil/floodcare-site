@@ -24,13 +24,59 @@ into the {body} of the default.hbs template --}}
     <div class="inner">
 
         <div class="post-feed">
-            {{#foreach posts}}
+        {{#get "posts" filter="featured:true" limit="all" as |featured|}}
 
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
+            {{#foreach featured}}
+                <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+        <br>
+                    <header class="post-full-header">
+                        <section class="post-full-meta">
+                            {{#primary_tag}}
+                                <span class="date-divider">/</span> <a href="{{url}}">{{name}}</a>
+                            {{/primary_tag}}
+                        </section>
+                        <h1 class="post-full-title">{{title}}</h1>
+                                            Updated: <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+
+                    </header>
+
+                    <section class="post-full-content">
+                        {{content}}
+                    </section>
 
             {{/foreach}}
+        {{/get}}
+        {{#get "posts" filter="tags:main" limit="all" as |main|}}
+
+            {{#foreach main}}
+                <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+        <br>
+                    <header class="post-full-header">
+                        <section class="post-full-meta">
+                            {{#primary_tag}}
+                                <span class="date-divider">/</span> <a href="{{url}}">{{name}}</a>
+                            {{/primary_tag}}
+                        </section>
+                        <h1 class="post-full-title">{{title}}</h1>
+                                            Updated: <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+
+                    </header>
+
+                    <section class="post-full-content">
+                        {{content}}
+                    </section>
+
+            {{/foreach}}
+
+
+        {{/get}}
         </div>
+        <strong> To add more resources to this list, please submit them here: <a href="https://goo.gl/forms/M8bRTv1QFkBB4K343">https://goo.gl/forms/M8bRTv1QFkBB4K343</a>
+        <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScRnIZXPKUy05toCtzjoVGI-Y_8IG6SOa2sGu8poaugHMWOKA/viewform?embedded=true"
+        width="100%" height="1500" frameborder="0" marginwidth="0"
+        marginheight="0">Loading...</iframe>
 
     </div>
 </main>
+
